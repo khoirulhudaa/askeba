@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider');
 let currentIndex = 0;
-const numSlides = 3; // Jumlah gambar
+const numSlides = 4; // Jumlah gambar
 
 function nextSlide() {
     currentIndex++;
@@ -15,6 +15,6 @@ function moveSlider() {
     slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 }
 
-setInterval(nextSlide, 3000); // Mengganti slide otomatis setiap 3 detik
+// setInterval(nextSlide, 5000); // Mengganti slide otomatis setiap 3 detik
 
 moveSlider(); // Memastikan slider dimulai dari gambar pertama

@@ -22,6 +22,26 @@ html {
     display: none;
 }
 
+.btn-service {
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: normal;
+    font-size: 14px;
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    transition: 0.2s;
+}
+
+.btn-service:hover {
+    transition: 0.2s;
+}
+
 .sidebare {
     display: none;
 }
@@ -221,13 +241,17 @@ header a {
     box-sizing: border-box;
 }
 
+.hrtop {
+    display: none;
+}
+
 .card-askeba {
     position: relative;
     border-radius: 12px;
     padding: 12px;
     box-sizing: border-box;
     border: 1px solid rgb(138, 138, 138);
-    height: 320px;
+    height: 380px;
     overflow: hidden;
     width: 40%;
     text-align: center;
@@ -322,9 +346,17 @@ header a {
     border-radius: 12px;
 }
 
+.right-section4 div:nth-child(2) img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 20px;
+    border-radius: 12px;
+}
+
 .slider-container {
     position: relative;
-    width: 84vw;
+    width: 90vw;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -335,14 +367,75 @@ header a {
 
 .slider {
     display: flex;
-    width: 300%; /* Total lebar gambar * jumlah gambar */
+    width: 400%; /* Total lebar gambar * jumlah gambar */
     transition: transform 1s ease-in-out; /* Efek transisi transformasi */
 }
 
-.slider img {
-    flex: 0 0 33.33%; /* Lebar gambar harus sesuai dengan jumlah gambar */
-    width: 100%;
+.slider .slide {
+    flex: 0 0 100%; /* Lebar gambar harus sesuai dengan jumlah gambar */
     height: auto;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.slide-left {
+    width: 50%;
+    height: max-content;
+}
+
+.hr {
+    width: 80%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+.slide-left ul {
+    margin-left: -8px;
+    width: 80%;
+}
+
+.slide-left ul li {
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.slide-left h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.slide-left p {
+    width: 80%;
+    line-height: 2em;
+    color: rgb(65, 65, 65);
+}
+
+.chevron {
+    width: 14px;
+}
+
+.slide-right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: max-content;
+}
+
+.slide-right .card-slide {
+    width: 45%;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-slide img {
+    width: 100%;
+    height: 100%;
 }
 
 button {
@@ -361,8 +454,22 @@ button {
 #nextBtn {
     position: absolute;
     top: 50%;
+    box-sizing: border-box;
+    border-radius: 999px;
     right: 10px;
+    height: 58px;
     transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+#nextBtn img {
+    position: relative;
+    top: 3px;
+}
+
+#nextBtn:active {
+    transform: translateY(-50%) scale(0.95);
+    transition: 0.2s;
 }
 
 .section5-askeba {
@@ -463,7 +570,7 @@ button {
 
 .wrapper-section6 {
     display: flex;
-    width: 70vw;
+    width: 90vw;
     align-items: center;
     justify-content: center;
 }
@@ -471,9 +578,9 @@ button {
 .child-team {
     position: relative;
     width: 33%;
-    height: 280px;
+    height: 225px;
     margin: 12px;
-    border-radius: 20px;
+    border-radius: 220px;
     border: 1px solid rgb(175, 175, 175);
     overflow: hidden;
     margin-bottom: 50px;
@@ -488,7 +595,7 @@ button {
 }
 
 .child-team:nth-child(1) img {
-    height: 110%;
+    height: 124%;
     position: relative;
     bottom: 50px;
     z-index: -1;
@@ -501,10 +608,29 @@ button {
     z-index: -1;
 }
 
+.child-team:nth-child(4) img {
+    height: 100%;
+    position: relative;
+    top: 40px;
+    width: auto;
+    transform: scale(1.5);
+    z-index: -1;
+}
+
+.child-team:nth-child(5) img {
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 22px;
+    width: auto;
+    z-index: -1;
+}
+
 .name-team {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.76);
     width: max-content;
     background-color: var(--primary);
     color: white;
@@ -513,7 +639,110 @@ button {
     padding: 5px 20px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 750px) {
+    .btn-service {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translate(-50%, -12%);
+    }
+
+    .hrtop {
+        width: 80%;
+        display: inline;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        height: max-content;
+    }
+
+    .slider-container {
+        border-radius: 0;
+    }
+
+    .slider .slide {
+        flex: 0 0 100%; /* Lebar gambar harus sesuai dengan jumlah gambar */
+        height: max-content;
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .slide-left {
+        width: 100%;
+        box-sizing: border-box;
+        height: max-content;
+    }
+
+    .hr {
+        width: 80%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .slide-left b {
+        display: none;
+    }
+
+    .slide-left ul {
+        margin-left: -8px;
+        width: 80%;
+        display: none;
+    }
+
+    .slide-left ul li {
+        color: rgb(58, 58, 58);
+        font-size: 12px;
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .slide-left h3 {
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .slide-left p {
+        width: 90vw;
+        line-height: 2em;
+        color: rgb(65, 65, 65);
+    }
+
+    .chevron {
+        width: 14px;
+    }
+
+    .slide-right {
+        width: 100%;
+        display: flex;
+        margin-left: -10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: max-content;
+    }
+
+    .imgSecond {
+        display: none;
+    }
+
+    .slide-right .card-slide {
+        width: 25%;
+        height: 240px;
+        margin: 10px;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    .card-slide img {
+        height: 110%;
+        width: 100%;
+    }
+
     .wa-feature {
         position: fixed;
         right: 25px;
@@ -760,7 +989,7 @@ button {
         padding: 12px;
         box-sizing: border-box;
         border: 1px solid rgb(138, 138, 138);
-        height: 320px;
+        height: 400px;
         overflow: hidden;
         width: 92%;
         text-align: center;
@@ -976,7 +1205,7 @@ button {
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 750px) {
     .legend {
         display: none;
     }
@@ -1172,7 +1401,7 @@ button {
 
 @media screen and (max-width: 750px) {
     .container-section4-section4mz4 {
-        margin: 20px 0;
+        margin: 40px 0 0px 0;
     }
 
     .container-exp {
