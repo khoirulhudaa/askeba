@@ -30,6 +30,10 @@ html {
     display: none;
 }
 
+.btn-toggle {
+    display: none;
+}
+
 header {
     position: fixed;
     width: 100vw;
