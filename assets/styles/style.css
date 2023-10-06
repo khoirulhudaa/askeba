@@ -573,6 +573,21 @@ button {
         width: 100%;
     }
 
+    .section3-askeba {
+        position: relative;
+        width: 100vw;
+        box-sizing: border-box;
+        padding: 0px;
+        margin-top: -40px;
+        overflow: hidden;
+        display: flex;
+        margin-top: -10px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        margin-bottom: 0px;
+    }
+
     .section2-askeba {
         padding: 24px 20px;
         display: flex;
@@ -586,6 +601,7 @@ button {
         font-size: 16px;
         text-align: left;
         line-height: 2em;
+        margin-top: -25px;
         width: 90vw;
     }
 
@@ -600,7 +616,7 @@ button {
     }
 
     .container-section4-section4mz4 h2 {
-        margin-left: 30px;
+        margin-left: 20px;
         margin-bottom: 10px;
     }
 
@@ -609,8 +625,8 @@ button {
     }
 
     .left-section4 p {
-        width: 90%;
-        margin-left: 30px;
+        width: 94%;
+        margin-left: 20px;
         text-align: left;
     }
 
@@ -647,6 +663,7 @@ button {
 
     .section5-askeba {
         margin-top: 0px;
+        margin-bottom: 0px;
         text-align: left;
         align-items: start;
         justify-content: start;
@@ -654,11 +671,20 @@ button {
 
     .section5-askeba h2 {
         text-align: left;
+        font-size: 34px;
+        margin-left: -10px;
+    }
+
+    .section5-askeba p {
+        width: 96%;
+        margin-left: -7px;
+        margin-top: -6px;
     }
 
     .section6-askeba h2 {
         text-align: left;
-        margin-left: 16px;
+        font-size: 34px;
+        margin-left: 4px;
     }
 
     .description-hero h1 {
@@ -690,7 +716,8 @@ button {
 
     .section3-askeba h2 {
         font-size: 34px;
-        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-bottom: 40px;
     }
 
     .container-section4-section4mz4 h2 {
@@ -708,14 +735,16 @@ button {
         flex-direction: column;
         display: flex;
         width: 100%;
-        margin-left: 4px;
+        margin-top: -10px;
+        margin-left: 0px;
         justify-content: center;
         align-items: center;
     }
 
     .wrapper-section6 img {
         width: 94%;
-        height: 300px;
+        height: 280px;
+        margin-left: -3px;
         margin: 0;
         margin-bottom: 50px;
     }
@@ -862,7 +891,6 @@ button {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
-    
     .legend {
         display: none;
     }
@@ -1057,7 +1085,6 @@ button {
 }
 
 @media screen and (max-width: 750px) {
-
     .container-section4-section4mz4 {
         margin: 20px 0;
     }
