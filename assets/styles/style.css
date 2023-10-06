@@ -5,6 +5,8 @@
 
 body {
     padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
     margin: 0;
 }
 
@@ -481,6 +483,7 @@ button {
     .sidebare {
         position: fixed;
         left: -100%;
+        display: block;
         top: 0;
         width: 100vw;
         height: 100vh;
@@ -535,6 +538,7 @@ button {
         height: 30px;
         position: absolute;
         top: 20px;
+        display: block;
         right: 20px;
         cursor: pointer;
         transition: 0.2s;
@@ -557,7 +561,8 @@ button {
     }
 
     .right-section4 div {
-        width: 86vw;
+        width: 85vw;
+        margin-top: 20px;
     }
 
     .right-section4 div img {
@@ -592,6 +597,7 @@ button {
 
     .container-section4-section4mz4 h2 {
         margin-left: 30px;
+        margin-bottom: 10px;
     }
 
     .left-section4 {
@@ -599,7 +605,7 @@ button {
     }
 
     .left-section4 p {
-        width: 94vw;
+        width: 90%;
         margin-left: 30px;
         text-align: left;
     }
@@ -644,10 +650,6 @@ button {
 
     .section5-askeba h2 {
         text-align: left;
-    }
-
-    .section5-askeba p {
-        width: 90vw;
     }
 
     .section6-askeba h2 {
@@ -701,7 +703,7 @@ button {
     .wrapper-section6 {
         flex-direction: column;
         display: flex;
-        width: 94vw;
+        width: 100%;
         margin-left: 4px;
         justify-content: center;
         align-items: center;
@@ -856,9 +858,13 @@ button {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 576px) {
+    
+    .legend {
+        display: none;
+    }
+
     .footer2-mz2 {
         padding: 22px;
-        width: 100vw;
         margin-top: 20px;
     }
 
@@ -1047,6 +1053,11 @@ button {
 }
 
 @media screen and (max-width: 750px) {
+
+    .container-section4-section4mz4 {
+        margin: 20px 0;
+    }
+
     .container-exp {
         padding: 30px;
     }
