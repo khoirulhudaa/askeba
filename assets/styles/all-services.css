@@ -431,11 +431,14 @@ button:active {
     .trainingHero img {
         position: relative;
         top: 30px;
+        width: auto;
+        height: auto;
     }
-
+    
     .consulHero img {
         position: relative;
         top: 0px;
+        width: auto;
     }
 
     .hero-article-wonderful {
