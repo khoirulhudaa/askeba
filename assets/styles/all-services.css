@@ -54,12 +54,12 @@
 
 .trainingHero img {
     position: relative;
-    top: -300px;
+    top: 0px;
 }
 
 .consulHero img {
     position: relative;
-    top: -100px;
+    top: -300px;
 }
 
 .wrapper-list-hero-wonderful .icon-article {
@@ -428,6 +428,16 @@ button:active {
 }
 
 @media screen and (max-width: 1000px) {
+    .trainingHero img {
+        position: relative;
+        top: 30px;
+    }
+
+    .consulHero img {
+        position: relative;
+        top: 0px;
+    }
+
     .hero-article-wonderful {
         height: 50vh;
     }
