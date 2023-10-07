@@ -781,7 +781,8 @@ button {
         left: -100%;
         display: block;
         top: 0;
-        width: 100vw;
+        width: 86vw;
+        border-right: 2px solid var(--primary);
         height: 100vh;
         transition: 0.5s;
         z-index: 9999999999999;
