@@ -287,7 +287,7 @@ header a {
     flex-direction: column;
     background-color: var(--primary);
     align-items: center;
-    width: 88vw;
+    width: 100vw;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
@@ -486,7 +486,7 @@ button {
     margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
-    width: 88vw;
+    width: 100vw;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -520,7 +520,7 @@ button {
 
 .section5b-askeba {
     position: relative;
-    width: 88vw;
+    width: 100vw;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -621,8 +621,8 @@ button {
 .wrapper-section6 {
     display: flex;
     flex-wrap: wrap;
-    width: 90vw;
-    padding: 0 30px;
+    width: 96vw;
+    padding: 0 0px;
     align-items: center;
     justify-content: center;
 }
