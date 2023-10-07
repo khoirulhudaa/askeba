@@ -723,12 +723,18 @@ button {
     .section5b-askeba {
         margin-bottom: 30px;
         text-align: left;
+        padding: 10px;
         align-items: start;
+    }
+
+    .section5b-askeba p {
+        width: 90vw;
     }
 
     .section5b-askeba h2 {
         font-size: 34px;
         margin-bottom: 10px;
+        margin-left: 9px;
     }
 
     .section7-askeba {
