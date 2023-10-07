@@ -292,8 +292,7 @@ header a {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 }
 
 .container-section4-section4mz4 h2 {
@@ -487,7 +486,6 @@ button {
     margin-left: auto;
     margin-right: auto;
     width: 100vw;
-    border-radius: 20px;
     overflow: hidden;
     display: flex;
     background-color: var(--primary);
@@ -521,7 +519,6 @@ button {
 .section5b-askeba {
     position: relative;
     width: 100vw;
-    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
