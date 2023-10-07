@@ -52,6 +52,16 @@
     box-sizing: border-box;
 }
 
+.trainingHero img {
+    position: relative;
+    top: -300px;
+}
+
+.consulHero img {
+    position: relative;
+    top: -100px;
+}
+
 .wrapper-list-hero-wonderful .icon-article {
     border-radius: 9999px;
     width: 32px;

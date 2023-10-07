@@ -427,7 +427,7 @@ header a {
 
 .slide-right .card-slide {
     width: 45%;
-    height: 300px;
+    height: 260px;
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -640,6 +640,15 @@ button {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 750px) {
+    .child-team:nth-child(5) img {
+        height: 100%;
+        position: relative;
+        top: 0px;
+        left: 22px;
+        width: auto;
+        z-index: -1;
+    }
+
     .btn-service {
         position: absolute;
         bottom: 15px;
@@ -1055,10 +1064,11 @@ button {
     .name-team {
         position: absolute;
         bottom: 20px;
-        left: 20px;
+        left: 50%;
         width: max-content;
         background-color: var(--primary);
         color: white;
+        transform: translate(-50%, -50%);
         border: 1px solid white;
         border-radius: 999px;
         padding: 5px 20px;
