@@ -1157,16 +1157,15 @@ button {
     .wrapper-section6 {
         flex-direction: column;
         display: flex;
-        /* width: 90%; */
         margin-top: -10px;
-        margin-left: -30px;
+        margin-left: 4px;
         justify-content: start;
         align-items: start;
     }
 
     .wrapper-section6 .child-team {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 450px;
         margin: 0;
         border-radius: 20px;
