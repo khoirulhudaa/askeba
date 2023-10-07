@@ -83,15 +83,17 @@
     .flexbin > * {
         position: relative;
         display: block;
-        width: 90vw;
+        width: 89vw;
+        border-radius: 14px;
+        overflow: hidden;
         height: max-content;
         margin: 12px 2.5px;
     }
     .flexbin > * > img {
         height: 300px;
         object-fit: cover;
-        max-width: 87vw;
-        min-width: 87vw;
+        max-width: 100%;
+        min-width: 100%;
     }
     .flexbin.flexbin-margin {
         margin: 2.5px;
